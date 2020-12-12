@@ -1,5 +1,5 @@
-#pragma once
-#define _CRT_SECURE_NO_WARNINGS //чтобы работала си функция 
+п»ї#pragma once
+#define _CRT_SECURE_NO_WARNINGS //С‡С‚РѕР±С‹ СЂР°Р±РѕС‚Р°Р»Р° СЃРё С„СѓРЅРєС†РёСЏ 
 #include <string>
 #include <fstream>
 #include <iostream>
@@ -14,23 +14,23 @@ private:
 	int birthyear;
 
 public:
-	People():Surname(""),lifeplace(""),birthyear(0){} // конструктор по умолчанию (используем список инициализации)
-	People(const string& _surname, const string& _lifeplace, const int& _by); //конструктор от параметров
-	string get_surname(); // геттер фамилии
-	string get_lifeplace(); //геттер местажительства
-	int get_birthyear();// геттер даты раждения
-	void set_surname(const string& _surname); //сеттер фамилии
-	void set_lifeplace(const string& _lp); //сеттер местажительства
-	void set_birthyear(const int& _by); //сеттер даты рождения
+	People() :Surname(""), lifeplace(""), birthyear(0) {} // РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ (РёСЃРїРѕР»СЊР·СѓРµРј СЃРїРёСЃРѕРє РёРЅРёС†РёР°Р»РёР·Р°С†РёРё)
+	People(const string& _surname, const string& _lifeplace, const int& _by); //РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РѕС‚ РїР°СЂР°РјРµС‚СЂРѕРІ
+	string get_surname(); // РіРµС‚С‚РµСЂ С„Р°РјРёР»РёРё
+	string get_lifeplace(); //РіРµС‚С‚РµСЂ РјРµСЃС‚Р°Р¶РёС‚РµР»СЊСЃС‚РІР°
+	int get_birthyear();// РіРµС‚С‚РµСЂ РґР°С‚С‹ СЂР°Р¶РґРµРЅРёСЏ
+	void set_surname(const string& _surname); //СЃРµС‚С‚РµСЂ С„Р°РјРёР»РёРё
+	void set_lifeplace(const string& _lp); //СЃРµС‚С‚РµСЂ РјРµСЃС‚Р°Р¶РёС‚РµР»СЊСЃС‚РІР°
+	void set_birthyear(const int& _by); //СЃРµС‚С‚РµСЂ РґР°С‚С‹ СЂРѕР¶РґРµРЅРёСЏ
 };
 
-void read_from_file(People*& _array); //функция счтывания из файла
+void read_from_file(People*& _array); //С„СѓРЅРєС†РёСЏ СЃС‡С‚С‹РІР°РЅРёСЏ РёР· С„Р°Р№Р»Р°
 
-void output_array_data(People* _array); //функция вывода данных
+void output_array_data(People* _array); //С„СѓРЅРєС†РёСЏ РІС‹РІРѕРґР° РґР°РЅРЅС‹С…
 
-void correction_array_data(int num, People* _array); //функция корректировки данных
+void correction_array_data(int num, People* _array); //С„СѓРЅРєС†РёСЏ РєРѕСЂСЂРµРєС‚РёСЂРѕРІРєРё РґР°РЅРЅС‹С…
 
-double middle_age(People* _array); //функция посчета среднего возраста
+double middle_age(People* _array); //С„СѓРЅРєС†РёСЏ РїРѕСЃС‡РµС‚Р° СЃСЂРµРґРЅРµРіРѕ РІРѕР·СЂР°СЃС‚Р°
 
-int output_into_file_array_data(People* _array, string& output); //функция вывода в файл
+int output_into_file_array_data(People* _array, string& output); //С„СѓРЅРєС†РёСЏ РІС‹РІРѕРґР° РІ С„Р°Р№Р»
 
